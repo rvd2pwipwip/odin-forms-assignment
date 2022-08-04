@@ -71,8 +71,8 @@ body {
   box-shadow: none; /* Remove default red glow in Firefox */
 }
 
-.form-row input[type='text']:invalid:empty,
-.form-row input[type='email']:invalid:empty {
+.form-row input[type='text']:required,
+.form-row input[type='email']:required {
   border: 1px solid #D6D9DC;
 }
 
