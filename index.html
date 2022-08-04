@@ -25,6 +25,16 @@
       <label for='email'>Email</label>
       <input id='email' name='email' type='email' placeholder='joe@example.com'/>
     </div>
+    
+    <div class='form-row'>
+      <label for='zip-code'>Zip Code</label>
+      <input  id='zip-code' 
+              name='zip-code' 
+              type='text' 
+              pattern="^(?<full>(?<part1>[ABCEGHJKLMNPRSTVXY]{1}\d{1}[A-Z]{1})(?:[ ](?=\d))?(?<part2>\d{1}[A-Z]{1}\d{1}))$"
+              placeholder="A1B 2C3"
+              title="Please enter a valid zip code, example: A1B 2C3"/>
+    </div>
 
     <fieldset class='legacy-form-row'>
       <legend>Type of Talk</legend>
